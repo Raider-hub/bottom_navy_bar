@@ -137,8 +137,6 @@ class _ItemWidget extends StatelessWidget {
         duration: animationDuration,
         curve: curve,
         decoration: BoxDecoration(
-          color:
-              isSelected ? item.activeColor.withOpacity(0.2) : backgroundColor,
           borderRadius: BorderRadius.circular(itemCornerRadius),
           color: isSelected
               ? (item.activeBackgroundColor ??
@@ -173,7 +171,6 @@ class _ItemWidget extends StatelessWidget {
                       padding: EdgeInsets.symmetric(horizontal: 4),
                       child: DefaultTextStyle.merge(
                         style: TextStyle(
-                          color: item.activeColor,
                           color: item.activeTextColor ?? item.activeColor,
                           fontWeight: FontWeight.bold,
                         ),
